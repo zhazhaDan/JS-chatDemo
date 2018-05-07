@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .left {
+            width: 80px;
+            text-align: right;
+            padding-right: 2px;
+        }
+        div {
+            margin: auto;
+            margin-top: 50px;
+            align-content: center;
+        }
+       
+        div table h1 {
+            text-align: center;
+        }
+        table tr th h1 {
+            color: burlywood;
+        }
+    </style>
+        <script src="../jquery-3.3.1.js"></script>
+        <script src="login.js"></script>
+
+</head>
+<body>
+    <div class="content" style="width:400px;">
+        <table>
+            <!-- <form> -->
+                    <tr>
+                            <th colspan="3">
+                                    <h1>登录注册</h1>
+                            </th>
+                           
+                        </tr>
+                <tr>
+                    <th class="left">
+                        手机号：
+                    </th>
+                    <th>
+                        <input type="text" class="phone" name="phone">
+                    </th>
+                    <th>
+                            <!-- <a href="#" target="_self" onclick="getVerifiCode()">获取验证码</a> -->
+                            <input type="button" onclick="getVerifiCode()" value="获取验证码">
+                    </th>
+                </tr>
+                <tr>
+                        <th class="left">
+                            验证码：
+                        </th>
+                        <th>
+                            <input type="password" name="password" class="passworld">
+                        </th>
+                    </tr>
+                <tr>
+                    <th colspan="3">
+                        <input type="submit" onclick="submit()">
+                        <input type="reset">
+                    </th>
+                </tr>
+            <!-- </form> -->
+        </table>
+    </div>
+</body>
+</html>
